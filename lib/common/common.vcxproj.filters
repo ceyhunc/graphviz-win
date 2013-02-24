@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5f999443-c5e2-4769-9367-88171b9a0778}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{75966baf-676d-44e5-8235-db66e1c1ec42}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="args.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arrows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="colxlate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diagen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="emit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="figgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fontmetrics.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdtextsize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdusershape.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="geom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hpglgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="htmllex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="htmlparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="htmltable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="labels.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mapgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mifgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="picgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pointset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="postproc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="psgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="psusershape.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="routespl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shapes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="splines.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strcasecmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strncasecmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="svggen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="svgusershape.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vrmlgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vtxgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xdgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="colortbl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="const.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="renderprocs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xbuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

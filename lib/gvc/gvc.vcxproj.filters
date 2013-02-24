@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5a1ab3a4-a36f-48dc-8e01-f392be80e612}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{39f59d76-35e6-495c-9af7-740bac15e960}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dot_builtins.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvconfig.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvcontext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvdevice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvevent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvjobs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvlayout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvplugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvrender.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvtextlayout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gvusershape.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gvc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gvcint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gvcproc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gvplugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gvplugin_display.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gvplugin_layout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gvplugin_render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

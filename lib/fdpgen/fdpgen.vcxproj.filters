@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{cba31350-769c-4a32-83b3-db3cfa479096}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c45240b8-70eb-4f4c-b108-0b3920f0c159}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clusteredges.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="comp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fdpinit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="grid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tlayout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xlayout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="comp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

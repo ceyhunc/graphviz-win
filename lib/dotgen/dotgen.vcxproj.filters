@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{bac9f6b9-087b-44eb-a083-5de608a06084}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{223e921e-80c6-4fbe-b478-5b2736f2c031}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acyclic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="compound.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="conc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="decomp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dotinit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dotsplines.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fastgr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mincross.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="position.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rank.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sameport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dotprocs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

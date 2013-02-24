@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1e75e930-2815-4ecd-99ba-b5b792c87dba}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{881002ee-289a-4b41-bbb2-0a8c531b5968}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="block.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blockpath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blocktree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="circpos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="circular.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="circularinit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="deglist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edgelist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodelist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blockpath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blocktree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="circo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="circpos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="circular.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="deglist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edgelist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nodelist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nodeset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4c1ff35a-cdbe-4032-b4d9-b0152bb9b90b}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{578aca50-efb5-4a25-af9c-9b917830a4c9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_gd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_gd2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_gif_in.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_gif_out.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_io_dp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_io_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_io_ss.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_jpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_security.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_ss.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_topal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gd_wbmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdcache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdfontg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdfontl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdfontmb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdfonts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdfontt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdft.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdfx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdhelpers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdkanji.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdtables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gdxpm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wbmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gd_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdcache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdfontg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdfontl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdfontmb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdfonts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdfontt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jisx0208.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wbmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0df074c9-06c1-4ac0-a755-444e3910c3f9}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c1dd0448-105b-4bde-8c22-ad190b6d2523}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{55ca5d0e-1c28-4a18-a129-d15e26879e65}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Dot2Lefty">
+      <UniqueIdentifier>{f913e1ac-e14f-4dd2-bab7-4c55b2efcadb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dot2Lefty\Source Files dot2l">
+      <UniqueIdentifier>{96b36244-de7c-4f98-becb-6f3d86eff49f}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Dot2Lefty\Header Files dot2l">
+      <UniqueIdentifier>{e4b353d8-a662-485b-a44f-5776ee253edb}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="display.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="exec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gfxview.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="os\mswin32\io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lefty.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="str.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tbl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="txtview.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dot2l\dot2l.c">
+      <Filter>Dot2Lefty\Source Files dot2l</Filter>
+    </ClCompile>
+    <ClCompile Include="dot2l\dotlex.c">
+      <Filter>Dot2Lefty\Source Files dot2l</Filter>
+    </ClCompile>
+    <ClCompile Include="dot2l\dotparse.c">
+      <Filter>Dot2Lefty\Source Files dot2l</Filter>
+    </ClCompile>
+    <ClCompile Include="dot2l\dottrie.c">
+      <Filter>Dot2Lefty\Source Files dot2l</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="display.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gfxview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="str.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tbl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="txtview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dot2l\dot2l.h">
+      <Filter>Dot2Lefty\Header Files dot2l</Filter>
+    </ClInclude>
+    <ClInclude Include="dot2l\dotparse.h">
+      <Filter>Dot2Lefty\Header Files dot2l</Filter>
+    </ClInclude>
+    <ClInclude Include="dot2l\triefa.h">
+      <Filter>Dot2Lefty\Header Files dot2l</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ws\mswin32\lefty.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
