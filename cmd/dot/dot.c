@@ -23,9 +23,6 @@
 #include "globals.h"
 
 #include <time.h>
-#ifdef HAVE_UNISTD_H
-#include <unistd.h>
-#endif
 
 char *Info[] = {
 	"dot",			/* Program */
