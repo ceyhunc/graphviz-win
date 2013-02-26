@@ -15,8 +15,8 @@
 **********************************************************/
 
 /*
- * Written by Stephen North and Eleftherios Koutsofios.
- */
+* Written by Stephen North and Eleftherios Koutsofios.
+*/
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
@@ -32,7 +32,7 @@
 
 #if defined(HAVE_FENV_H) && defined(HAVE_FEENABLEEXCEPT)
 /* _GNU_SOURCE is needed for feenableexcept to be defined in fenv.h on GNU
- * systems.   Presumably it will do no harm on other systems. */
+* systems.   Presumably it will do no harm on other systems. */
 #ifndef _GNU_SOURCE
 #define _GNU_SOURCE
 #endif
@@ -44,9 +44,9 @@
 #endif
 
 char *Info[] = {
-    "dot",			/* Program */
-    VERSION,			/* Version */
-    BUILDDATE			/* Build Date */
+	"dot",			/* Program */
+	VERSION,			/* Version */
+	BUILDDATE			/* Build Date */
 };
 
 static GVC_t *Gvc;
@@ -55,56 +55,56 @@ static graph_t * G;
 #ifndef MSWIN32
 static void intr(int s)
 {
-    if (G)
-	gvRenderJobs(Gvc, G);
-    exit (gvFreeContext(Gvc));
+	if (G)
+		gvRenderJobs(Gvc, G);
+	exit (gvFreeContext(Gvc));
 }
 
 #ifndef NO_FPERR
 static void fperr(int s)
 {
-    fprintf(stderr, "caught SIGFPE %d\n", s);
-    /* signal (s, SIG_DFL); raise (s); */
-    exit(1);
+	fprintf(stderr, "caught SIGFPE %d\n", s);
+	/* signal (s, SIG_DFL); raise (s); */
+	exit(1);
 }
 
 static void fpinit(void)
 {
 #if defined(HAVE_FENV_H) && defined(HAVE_FEENABLEEXCEPT)
-    int exc = 0;
+	int exc = 0;
 # ifdef FE_DIVBYZERO
-    exc |= FE_DIVBYZERO;
+	exc |= FE_DIVBYZERO;
 # endif
 # ifdef FE_OVERFLOW
-    exc |= FE_OVERFLOW;
+	exc |= FE_OVERFLOW;
 # endif
 # ifdef FE_INVALID
-    exc |= FE_INVALID;
+	exc |= FE_INVALID;
 # endif
-    feenableexcept(exc);
+	feenableexcept(exc);
 
 #ifdef HAVE_FESETENV
 #ifdef FE_NONIEEE_ENV
-    fesetenv (FE_NONIEEE_ENV);
+	fesetenv (FE_NONIEEE_ENV);
 #endif
 #endif
 
 #elif  HAVE_FPU_CONTROL_H
-    /* On s390-ibm-linux, the header exists, but the definitions
-     * of the masks do not.  I assume this is temporary, but until
-     * there's a real implementation, it's probably safest to not
-     * adjust the FPU on this platform.
-     */
+	/* On s390-ibm-linux, the header exists, but the definitions
+	* of the masks do not.  I assume this is temporary, but until
+	* there's a real implementation, it's probably safest to not
+	* adjust the FPU on this platform.
+	*/
 # if defined(_FPU_MASK_IM) && defined(_FPU_MASK_DM) && defined(_FPU_MASK_ZM) && defined(_FPU_GETCW)
-    fpu_control_t fpe_flags = 0;
-    _FPU_GETCW(fpe_flags);
-    fpe_flags &= ~_FPU_MASK_IM;	/* invalid operation */
-    fpe_flags &= ~_FPU_MASK_DM;	/* denormalized operand */
-    fpe_flags &= ~_FPU_MASK_ZM;	/* zero-divide */
-    /*fpe_flags &= ~_FPU_MASK_OM;        overflow */
-    /*fpe_flags &= ~_FPU_MASK_UM;        underflow */
-    /*fpe_flags &= ~_FPU_MASK_PM;        precision (inexact result) */
-    _FPU_SETCW(fpe_flags);
+	fpu_control_t fpe_flags = 0;
+	_FPU_GETCW(fpe_flags);
+	fpe_flags &= ~_FPU_MASK_IM;	/* invalid operation */
+	fpe_flags &= ~_FPU_MASK_DM;	/* denormalized operand */
+	fpe_flags &= ~_FPU_MASK_ZM;	/* zero-divide */
+	/*fpe_flags &= ~_FPU_MASK_OM;        overflow */
+	/*fpe_flags &= ~_FPU_MASK_UM;        underflow */
+	/*fpe_flags &= ~_FPU_MASK_PM;        precision (inexact result) */
+	_FPU_SETCW(fpe_flags);
 # endif
 #endif
 }
@@ -115,68 +115,68 @@ static graph_t *create_test_graph(void)
 {
 #define NUMNODES 5
 
-    Agnode_t *node[NUMNODES];
-    Agraph_t *g;
-    int j, k;
-    char name[10];
+	Agnode_t *node[NUMNODES];
+	Agraph_t *g;
+	int j, k;
+	char name[10];
 
-    /* Create a new graph */
-    g = agopen("new_graph", AGDIGRAPH);
+	/* Create a new graph */
+	g = agopen("new_graph", AGDIGRAPH);
 
-    /* Add nodes */
-    for (j = 0; j < NUMNODES; j++) {
-	sprintf(name, "%d", j);
-	node[j] = agnode(g, name);
-    }
-
-    /* Connect nodes */
-    for (j = 0; j < NUMNODES; j++) {
-	for (k = j + 1; k < NUMNODES; k++) {
-	    agedge(g, node[j], node[k]);
+	/* Add nodes */
+	for (j = 0; j < NUMNODES; j++) {
+		sprintf(name, "%d", j);
+		node[j] = agnode(g, name);
 	}
-    }
-    return g;
+
+	/* Connect nodes */
+	for (j = 0; j < NUMNODES; j++) {
+		for (k = j + 1; k < NUMNODES; k++) {
+			agedge(g, node[j], node[k]);
+		}
+	}
+	return g;
 }
 
 int main(int argc, char **argv)
 {
-    graph_t *prev = NULL;
+	graph_t *prev = NULL;
 
-    Gvc = gvNEWcontext(Info, gvUsername());
-    gvParseArgs(Gvc, argc, argv);
+	Gvc = gvNEWcontext(Info, gvUsername());
+	gvParseArgs(Gvc, argc, argv);
 
 #ifndef MSWIN32
-    signal(SIGUSR1, gvToggle);
-    signal(SIGINT, intr);
+	signal(SIGUSR1, gvToggle);
+	signal(SIGINT, intr);
 #ifndef NO_FPERR
-    fpinit();
-    signal(SIGFPE, fperr);
+	fpinit();
+	signal(SIGFPE, fperr);
 #endif
 #endif
 
-    if (MemTest) {
-	while (1) {
-	    /* Create a test graph */
-	    G = create_test_graph();
+	if (MemTest) {
+		while (1) {
+			/* Create a test graph */
+			G = create_test_graph();
 
-	    /* Perform layout and cleanup */
-	    gvLayoutJobs(Gvc, G);  /* take layout engine from command line */
-	    gvFreeLayout(Gvc, G);
+			/* Perform layout and cleanup */
+			gvLayoutJobs(Gvc, G);  /* take layout engine from command line */
+			gvFreeLayout(Gvc, G);
 
-	    /* Delete graph */
-	    agclose(G);
+			/* Delete graph */
+			agclose(G);
+		}
+		assert(0);		/* should never exit loop */
+	} else {
+		while ((G = next_input_graph())) {
+			if (prev) {
+				gvFreeLayout(Gvc, prev);
+				agclose(prev);
+			}
+			gvLayoutJobs(Gvc, G);  /* take layout engine from command line */
+			gvRenderJobs(Gvc, G);
+			prev = G;
+		}
 	}
-	assert(0);		/* should never exit loop */
-    } else {
-	while ((G = next_input_graph())) {
-	    if (prev) {
-		gvFreeLayout(Gvc, prev);
-		agclose(prev);
-	    }
-	    gvLayoutJobs(Gvc, G);  /* take layout engine from command line */
-	    gvRenderJobs(Gvc, G);
-	    prev = G;
-	}
-    }
-    return (gvFreeContext(Gvc));
+	return (gvFreeContext(Gvc));
 }
