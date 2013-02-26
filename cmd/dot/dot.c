@@ -1,6 +1,3 @@
-/* $Id: dot.c,v 1.21 2005/12/23 16:28:34 ellson Exp $ $Revision: 1.21 $ */
-/* vim:set shiftwidth=4 ts=8: */
-
 /**********************************************************
 *      This software is part of the graphviz package      *
 *                http://www.graphviz.org/                 *
@@ -30,19 +27,6 @@
 #include <unistd.h>
 #endif
 
-#if defined(HAVE_FENV_H) && defined(HAVE_FEENABLEEXCEPT)
-/* _GNU_SOURCE is needed for feenableexcept to be defined in fenv.h on GNU
-* systems.   Presumably it will do no harm on other systems. */
-#ifndef _GNU_SOURCE
-#define _GNU_SOURCE
-#endif
-# include <fenv.h>
-#elif HAVE_FPU_CONTROL_H
-# include <fpu_control.h>
-#elif HAVE_SYS_FPU_H
-# include <sys/fpu.h>
-#endif
-
 char *Info[] = {
 	"dot",			/* Program */
 	VERSION,			/* Version */
@@ -51,65 +35,6 @@ char *Info[] = {
 
 static GVC_t *Gvc;
 static graph_t * G;
-
-#ifndef MSWIN32
-static void intr(int s)
-{
-	if (G)
-		gvRenderJobs(Gvc, G);
-	exit (gvFreeContext(Gvc));
-}
-
-#ifndef NO_FPERR
-static void fperr(int s)
-{
-	fprintf(stderr, "caught SIGFPE %d\n", s);
-	/* signal (s, SIG_DFL); raise (s); */
-	exit(1);
-}
-
-static void fpinit(void)
-{
-#if defined(HAVE_FENV_H) && defined(HAVE_FEENABLEEXCEPT)
-	int exc = 0;
-# ifdef FE_DIVBYZERO
-	exc |= FE_DIVBYZERO;
-# endif
-# ifdef FE_OVERFLOW
-	exc |= FE_OVERFLOW;
-# endif
-# ifdef FE_INVALID
-	exc |= FE_INVALID;
-# endif
-	feenableexcept(exc);
-
-#ifdef HAVE_FESETENV
-#ifdef FE_NONIEEE_ENV
-	fesetenv (FE_NONIEEE_ENV);
-#endif
-#endif
-
-#elif  HAVE_FPU_CONTROL_H
-	/* On s390-ibm-linux, the header exists, but the definitions
-	* of the masks do not.  I assume this is temporary, but until
-	* there's a real implementation, it's probably safest to not
-	* adjust the FPU on this platform.
-	*/
-# if defined(_FPU_MASK_IM) && defined(_FPU_MASK_DM) && defined(_FPU_MASK_ZM) && defined(_FPU_GETCW)
-	fpu_control_t fpe_flags = 0;
-	_FPU_GETCW(fpe_flags);
-	fpe_flags &= ~_FPU_MASK_IM;	/* invalid operation */
-	fpe_flags &= ~_FPU_MASK_DM;	/* denormalized operand */
-	fpe_flags &= ~_FPU_MASK_ZM;	/* zero-divide */
-	/*fpe_flags &= ~_FPU_MASK_OM;        overflow */
-	/*fpe_flags &= ~_FPU_MASK_UM;        underflow */
-	/*fpe_flags &= ~_FPU_MASK_PM;        precision (inexact result) */
-	_FPU_SETCW(fpe_flags);
-# endif
-#endif
-}
-#endif
-#endif
 
 static graph_t *create_test_graph(void)
 {
@@ -144,15 +69,6 @@ int main(int argc, char **argv)
 
 	Gvc = gvNEWcontext(Info, gvUsername());
 	gvParseArgs(Gvc, argc, argv);
-
-#ifndef MSWIN32
-	signal(SIGUSR1, gvToggle);
-	signal(SIGINT, intr);
-#ifndef NO_FPERR
-	fpinit();
-	signal(SIGFPE, fperr);
-#endif
-#endif
 
 	if (MemTest) {
 		while (1) {
