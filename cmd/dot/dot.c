@@ -22,8 +22,6 @@
 #include "gvc.h"
 #include "globals.h"
 
-#include <time.h>
-
 char *Info[] = {
 	"dot",			/* Program */
 	VERSION,			/* Version */
