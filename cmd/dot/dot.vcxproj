@@ -81,7 +81,7 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>pack.lib;pathplan.lib;plugin.lib;gd.lib;graph.lib;cdt.lib;common.lib;gvc.lib;neatogen.lib;twopigen.lib;fdpgen.lib;circogen.lib;dotgen.lib;libexpat.lib;libexpatw.lib;z.lib;png.lib;jpeg.lib;ft.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pack.lib;pathplan.lib;plugin.lib;gd.lib;graph.lib;cdt.lib;common.lib;gvc.lib;neatogen.lib;twopigen.lib;fdpgen.lib;circogen.lib;dotgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Release/dot.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\..\lib\lib\Release;..\..\third-party\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
