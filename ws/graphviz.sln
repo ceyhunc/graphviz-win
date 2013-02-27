@@ -37,6 +37,39 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "plugin", "..\lib\plugin\plu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "twopigen", "..\lib\twopigen\twopigen.vcxproj", "{6ED016A7-B114-4CFA-ADB3-6F2619598677}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GraphVizLibDocs", "GraphVizLibDocs", "{A5927F4A-5A3D-412A-90DA-8FCD5BF93EC0}"
+	ProjectSection(SolutionItems) = preProject
+		..\GraphViz Library Documentation\A method for drawing directed graphs.pdf = ..\GraphViz Library Documentation\A method for drawing directed graphs.pdf
+		..\GraphViz Library Documentation\Agraph library tutorial.pdf = ..\GraphViz Library Documentation\Agraph library tutorial.pdf
+		..\GraphViz Library Documentation\agraph.pdf = ..\GraphViz Library Documentation\agraph.pdf
+		..\GraphViz Library Documentation\An open graph visualization system and its applications to software engineering.pdf = ..\GraphViz Library Documentation\An open graph visualization system and its applications to software engineering.pdf
+		..\GraphViz Library Documentation\Applications of Graph Visualization.ps = ..\GraphViz Library Documentation\Applications of Graph Visualization.ps
+		..\GraphViz Library Documentation\Arrow Shapes.mht = ..\GraphViz Library Documentation\Arrow Shapes.mht
+		..\GraphViz Library Documentation\cdt.pdf = ..\GraphViz Library Documentation\cdt.pdf
+		..\GraphViz Library Documentation\CDT; A Container Data Type Library.pdf = ..\GraphViz Library Documentation\CDT; A Container Data Type Library.pdf
+		..\GraphViz Library Documentation\CDT; A General and Efficient Container Data Type Library.ps = ..\GraphViz Library Documentation\CDT; A General and Efficient Container Data Type Library.ps
+		..\GraphViz Library Documentation\Color Names.mht = ..\GraphViz Library Documentation\Color Names.mht
+		..\GraphViz Library Documentation\Command-line Usage.mht = ..\GraphViz Library Documentation\Command-line Usage.mht
+		..\GraphViz Library Documentation\dotguide.pdf = ..\GraphViz Library Documentation\dotguide.pdf
+		..\GraphViz Library Documentation\dottyguide.pdf = ..\GraphViz Library Documentation\dottyguide.pdf
+		..\GraphViz Library Documentation\expr.pdf = ..\GraphViz Library Documentation\expr.pdf
+		..\GraphViz Library Documentation\Graph Attributes.mht = ..\GraphViz Library Documentation\Graph Attributes.mht
+		..\GraphViz Library Documentation\graph.pdf = ..\GraphViz Library Documentation\graph.pdf
+		..\GraphViz Library Documentation\Graphviz and Dynagraph - Static and Dynamic Graph Drawing Tools.pdf = ..\GraphViz Library Documentation\Graphviz and Dynagraph - Static and Dynamic Graph Drawing Tools.pdf
+		..\GraphViz Library Documentation\Graphviz custom shapes.mht = ..\GraphViz Library Documentation\Graphviz custom shapes.mht
+		..\GraphViz Library Documentation\Graphviz FAQ 2006-07-27.mht = ..\GraphViz Library Documentation\Graphviz FAQ 2006-07-27.mht
+		..\GraphViz Library Documentation\Graphviz layered drawing.mht = ..\GraphViz Library Documentation\Graphviz layered drawing.mht
+		..\GraphViz Library Documentation\leftyguide.pdf = ..\GraphViz Library Documentation\leftyguide.pdf
+		..\GraphViz Library Documentation\neatoguide.pdf = ..\GraphViz Library Documentation\neatoguide.pdf
+		..\GraphViz Library Documentation\Node Shapes.mht = ..\GraphViz Library Documentation\Node Shapes.mht
+		..\GraphViz Library Documentation\On-line Hierarchical Graph Drawing.pdf = ..\GraphViz Library Documentation\On-line Hierarchical Graph Drawing.pdf
+		..\GraphViz Library Documentation\Output Formats.mht = ..\GraphViz Library Documentation\Output Formats.mht
+		..\GraphViz Library Documentation\pack.pdf = ..\GraphViz Library Documentation\pack.pdf
+		..\GraphViz Library Documentation\pathplan.pdf = ..\GraphViz Library Documentation\pathplan.pdf
+		..\GraphViz Library Documentation\The DOT Language.mht = ..\GraphViz Library Documentation\The DOT Language.mht
+		..\GraphViz Library Documentation\Using Graphviz as a library.pdf = ..\GraphViz Library Documentation\Using Graphviz as a library.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
