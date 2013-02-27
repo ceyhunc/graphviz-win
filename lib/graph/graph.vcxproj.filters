@@ -9,6 +9,9 @@
       <UniqueIdentifier>{58de54d1-4a81-472e-afa5-7b09f5f22842}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{9dad5224-fe7d-438b-aba9-527a1bc16c2f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="agxbuf.c">
@@ -58,5 +61,10 @@
     <ClInclude Include="triefa.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graph.pdf">
+      <Filter>Documentation</Filter>
+    </None>
   </ItemGroup>
 </Project>
