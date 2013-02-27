@@ -1,6 +1,3 @@
-/* $Id: cdt.h,v 1.1.1.1 2004/12/23 04:03:59 ellson Exp $ $Revision: 1.1.1.1 $ */
-/* vim:set shiftwidth=4 ts=8: */
-
 /**********************************************************
 *      This software is part of the graphviz package      *
 *                http://www.graphviz.org/                 *

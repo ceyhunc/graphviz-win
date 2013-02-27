@@ -1,6 +1,3 @@
-/* $Id: ast_common.h,v 1.1 2005/01/20 19:57:37 erg Exp $ $Revision: 1.1 $ */
-/* vim:set shiftwidth=4 ts=8: */
-
 /**********************************************************
 *      This software is part of the graphviz package      *
 *                http://www.graphviz.org/                 *
