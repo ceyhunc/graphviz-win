@@ -24,10 +24,10 @@
 extern "C" {
 #endif
 
-    struct gvlayout_engine_s {
-	void (*layout) (graph_t * g);
-	void (*cleanup) (graph_t * g);
-    };
+	struct gvlayout_engine_s {
+		void (*layout) (graph_t * g);
+		void (*cleanup) (graph_t * g);
+	};
 
 #ifdef __cplusplus
 }
