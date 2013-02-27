@@ -65,6 +65,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{3D7710C1-259F-4B24-8ED0-088952C4AA39}"
 	ProjectSection(SolutionItems) = preProject
 		..\_Documentation\cdtIncludeFileDependencies.dgml = ..\_Documentation\cdtIncludeFileDependencies.dgml
+		..\_Documentation\pahplanIncludeFileDependencies.dgml = ..\_Documentation\pahplanIncludeFileDependencies.dgml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleGraphForTesting", "SampleGraphForTesting", "{F7A2E4DB-9624-418A-82BF-B0110EA3D0D2}"

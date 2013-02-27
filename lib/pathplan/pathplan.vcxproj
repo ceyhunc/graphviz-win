@@ -134,6 +134,9 @@
     <ClInclude Include="vis.h" />
     <ClInclude Include="vispath.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="pathplan.pdf" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

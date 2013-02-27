@@ -9,6 +9,9 @@
       <UniqueIdentifier>{af87b78e-240b-4517-b9c3-ad491901a326}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{bc662627-36f8-445c-8268-4a20b9b69500}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cvt.c">
@@ -61,5 +64,10 @@
     <ClInclude Include="vispath.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pathplan.pdf">
+      <Filter>Documentation</Filter>
+    </None>
   </ItemGroup>
 </Project>
