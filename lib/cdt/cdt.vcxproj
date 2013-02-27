@@ -181,6 +181,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ast_common.h" />
     <ClInclude Include="cdt.h" />
     <ClInclude Include="dthdr.h" />
   </ItemGroup>
