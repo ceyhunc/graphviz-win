@@ -9,6 +9,9 @@
       <UniqueIdentifier>{2b042587-b3f3-44a2-bf27-b754bf4fa955}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{42656229-4c5c-4da4-a3a2-f5b4fd1dbfaa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dtclose.c">
@@ -72,6 +75,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd" />
+    <None Include="cdt.pdf">
+      <Filter>Documentation</Filter>
+    </None>
   </ItemGroup>
 </Project>

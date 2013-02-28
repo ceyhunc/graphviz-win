@@ -56,9 +56,6 @@
     <ClCompile Include="gd_wbmp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gdcache.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="gdfontg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -81,9 +78,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="gdhelpers.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="gdkanji.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="gdtables.c">

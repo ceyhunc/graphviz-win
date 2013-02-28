@@ -78,6 +78,7 @@
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <OutputFile>.\Debug/gd.bsc</OutputFile>
+      <PreserveSbr>true</PreserveSbr>
     </Bscmake>
     <PostBuildEvent>
       <Command>copy .\Debug\gd.lib ..\lib\Debug</Command>
@@ -137,7 +138,6 @@
     <ClCompile Include="gd_ss.c" />
     <ClCompile Include="gd_topal.c" />
     <ClCompile Include="gd_wbmp.c" />
-    <ClCompile Include="gdcache.c" />
     <ClCompile Include="gdfontg.c" />
     <ClCompile Include="gdfontl.c" />
     <ClCompile Include="gdfontmb.c" />
@@ -149,7 +149,6 @@
     </ClCompile>
     <ClCompile Include="gdfx.c" />
     <ClCompile Include="gdhelpers.c" />
-    <ClCompile Include="gdkanji.c" />
     <ClCompile Include="gdtables.c" />
     <ClCompile Include="gdxpm.c" />
     <ClCompile Include="wbmp.c" />
