@@ -12,9 +12,9 @@ char *Info[]={
 	"simpledot", "1.0", "2013"
 };
 
-double _HUGE = 1e16;
+double _HUGE = 1e9;
 
-int _tmain(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
 	Gvc = gvNEWcontext(Info, gvUsername());
 	gvParseArgs(Gvc, argc, argv);
