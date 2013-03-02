@@ -59,7 +59,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\lib\lib\Debug</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\lib\lib\$(Configuration)</AdditionalLibraryDirectories>
       <AdditionalDependencies>pack.lib;pathplan.lib;plugin.lib;gd.lib;graph.lib;cdt.lib;common.lib;gvc.lib;neatogen.lib;twopigen.lib;fdpgen.lib;circogen.lib;dotgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>libcmtd.lib</IgnoreSpecificDefaultLibraries>
     </Link>
@@ -81,12 +81,14 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>pack.lib;pathplan.lib;plugin.lib;gd.lib;graph.lib;cdt.lib;common.lib;gvc.lib;neatogen.lib;twopigen.lib;fdpgen.lib;circogen.lib;dotgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\lib\lib\Release</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\lib\lib\$(Configuration)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
+    <Text Include="ReadMe.txt">
+      <DeploymentContent>false</DeploymentContent>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />

@@ -1,6 +1,3 @@
-/* $Id: gvplugin_layout.h,v 1.5 2005/10/18 18:56:10 ellson Exp $ $Revision: 1.5 $ */
-/* vim:set shiftwidth=4 ts=8: */
-
 /**********************************************************
 *      This software is part of the graphviz package      *
 *                http://www.graphviz.org/                 *

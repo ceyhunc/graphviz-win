@@ -24,19 +24,19 @@ extern "C" {
 #endif
 
 #ifndef DISABLE_CODEGENS
-    typedef struct codegen_s codegen_t;
-    typedef struct codegen_info_s codegen_info_t;
+	typedef struct codegen_s codegen_t;
+	typedef struct codegen_info_s codegen_info_t;
 #endif
 
-    typedef struct GVJ_s GVJ_t;
-    typedef struct GVC_s GVC_t;
+	typedef struct GVJ_s GVJ_t;
+	typedef struct GVC_s GVC_t;
 
-    typedef struct {
-	const char *name;
-	void* address;
-    } lt_symlist_t;
+	typedef struct {
+		const char *name;
+		void* address;
+	} lt_symlist_t;
 
-    extern const lt_symlist_t lt_preloaded_symbols[];
+	extern const lt_symlist_t lt_preloaded_symbols[];
 
 #ifdef __cplusplus
 }

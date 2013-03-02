@@ -84,7 +84,7 @@
       <AdditionalDependencies>pack.lib;pathplan.lib;plugin.lib;gd.lib;graph.lib;cdt.lib;common.lib;gvc.lib;neatogen.lib;twopigen.lib;fdpgen.lib;circogen.lib;dotgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Release/dot.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\..\lib\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\lib\lib\$(Configuration)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>.\Release/dot.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
@@ -129,7 +129,7 @@
       <AdditionalDependencies>pack.lib;pathplan.lib;plugin.lib;gd.lib;graph.lib;cdt.lib;common.lib;gvc.lib;neatogen.lib;twopigen.lib;fdpgen.lib;circogen.lib;dotgen.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Debug/dot.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\..\lib\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\lib\lib\$(Configuration)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/dot.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>

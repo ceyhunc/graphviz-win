@@ -1,6 +1,3 @@
-/* $Id: gvplugin.h,v 1.18 2005/11/10 14:39:01 ellson Exp $ $Revision: 1.18 $ */
-/* vim:set shiftwidth=4 ts=8: */
-
 /**********************************************************
 *      This software is part of the graphviz package      *
 *                http://www.graphviz.org/                 *
@@ -49,7 +46,7 @@ extern "C" {
 	*/
 #define ELEM(x) API_##x,
 
-typedef enum { APIS _DUMMY_ELEM_=0 } api_t; /* API_render, API_layout, ... */
+	typedef enum { APIS _DUMMY_ELEM_=0 } api_t; /* API_render, API_layout, ... */
 	/* Stupid but true: The sole purpose of "_DUMMY_ELEM_=0"
 	* is to avoid a "," after the last element of the enum
 	* because some compilers when using "-pedantic"
@@ -94,8 +91,7 @@ typedef enum { APIS _DUMMY_ELEM_=0 } api_t; /* API_render, API_layout, ... */
 	} gvplugin_api_t;
 
 	typedef struct {
-		char *packagename;    /* used when this plugin is builtin and has
-							  no pathname */
+		char *packagename;    /* used when this plugin is builtin and has no pathname */
 		gvplugin_api_t *apis;
 	} gvplugin_library_t;
 
