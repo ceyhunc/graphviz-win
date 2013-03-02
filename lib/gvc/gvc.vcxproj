@@ -100,6 +100,7 @@
       <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -112,6 +113,7 @@
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <OutputFile>.\Release/gvc.bsc</OutputFile>
+      <PreserveSbr>true</PreserveSbr>
     </Bscmake>
     <PostBuildEvent>
       <Command>copy .\Release\gvc.lib ..\lib\Release</Command>
@@ -136,7 +138,6 @@
     <ClInclude Include="gvcint.h" />
     <ClInclude Include="gvcproc.h" />
     <ClInclude Include="gvplugin.h" />
-    <ClInclude Include="gvplugin_display.h" />
     <ClInclude Include="gvplugin_layout.h" />
     <ClInclude Include="gvplugin_render.h" />
   </ItemGroup>

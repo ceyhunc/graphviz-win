@@ -61,9 +61,6 @@
     <ClInclude Include="gvplugin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gvplugin_display.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="gvplugin_layout.h">
       <Filter>Header Files</Filter>
     </ClInclude>
